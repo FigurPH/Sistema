@@ -1,17 +1,12 @@
+#   IMPORTS ESSENCIAIS
 import eel
-import sys
-import sqlite3
-import json
+#######################
 
+#   IMPORTS DESTE SISTEMA
+from www.app.MVC.controller import controllerDB
+from www.app.MVC.controller import controllerEstoque
+#########################
 
 @eel.expose
 def hello():
     print("Hello World")
-
-
-@eel.expose
-def sql():
-    db = sqlite3.connect('www/app/db/database.db')
-    cursor = db.cursor()
-    cursor.execute("select * from produtos")
-    print(cursor.fetchall())
