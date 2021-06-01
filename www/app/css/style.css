@@ -36,8 +36,10 @@
   
   /* Style the main content */
   .main {
+    height: 100vh;
     margin-left: 160px; /* Same as the width of the sidenav */
     padding: 0px 10px;
+    background-color: lightgrey;
   }
   
   /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
