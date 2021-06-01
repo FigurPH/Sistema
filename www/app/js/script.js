@@ -1,4 +1,8 @@
 function callPython() {
+    eel.sql()
+}
+
+function callHello(){
     eel.hello()
 }
 
@@ -17,7 +21,7 @@ function goEntradas() {
 function feedTela(tela) {
     $(document).ready(function () {
         $(function () {
-            $("#main_body").load("app/view/"+tela + ".html");
+            $("#main_body").load("app/MVC/view/"+tela + ".html");
         });
     });
 }

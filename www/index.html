@@ -8,6 +8,8 @@
   <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
   <script type="text/javascript" src="/eel.js"></script>
   <script src="app/js/script.js"></script>
+  <script src="app/js/jquery.js"></script>
+
 </head>
 
 <body>
@@ -21,8 +23,18 @@
     <a href="#" onclick="goOutro()">Relatórios</a>
     <p>DEV Figur</p>
 
-    <button onclick="callPython()">Clique</button>
+    <button onclick="callHello()">Clique</button>
   </div>
+  <div id="main_body" class="main"></div>
+  <script>
+    $(document).ready(function () {
+      $(function () {
+        feedTela("home") //aqui traz home ao abrir o programa
+        //responsivo:
+        //      ao clicar em outro menu, carrega outra page
+      });
+    });
+  </script>
 </body>
 
 </html>
