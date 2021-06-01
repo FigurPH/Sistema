@@ -9,3 +9,4 @@ class Produto:
         self.desc = desc
         self.cat = cat
         self.qtd = qtd
+
