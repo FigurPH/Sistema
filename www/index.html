@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Caixa</title>
+  <link rel="stylesheet" href="app/css/style.css">
+
+  <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
+  <script type="text/javascript" src="/eel.js"></script>
+  <script>
+    function callPython() {
+      eel.hello()
+    }
+  </script>
+</head>
+
+<body>
+  <div class="sidebar">
+    <a href="#" onclick="goHome()">Home</a>
+    <a href="#" onclick="goEstoque()">Estoque</a>
+    <a href="#" onclick="goEntradas()">Entradas</a>
+    <a href="#" onclick="goOutro()">Vendas</a>
+    <a href="#" onclick="goOutro()">Clientes</a>
+    <a href="#" onclick="goOutro()">Configurações</a>
+    <a href="#" onclick="goOutro()">Relatórios</a>
+    <p>DEV Figur</p>
+
+    <button onclick="callPython()">Clique</button>
+  </div>
+</body>
+
+</html>
