@@ -10,3 +10,11 @@ class Produto:
         self.cat = cat
         self.qtd = qtd
 
+    def dump(self):
+        print("ID: ", self.id,"|",
+              "Nome: ", self.nome,"|",
+              "CódBarras: ", self.barcode,"|",
+              "Preço: ", self.preco,"|",
+              "Desc: ", self.desc,"|",
+              "QTD: ", self.qtd,"|",
+              "Catg: ", self.cat)
